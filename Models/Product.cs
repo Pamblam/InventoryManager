@@ -5,10 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InventoryManager_C968.Models
-{
-    internal class Product
-    {
+namespace InventoryManager_C968 {
+    public class Product {
         public BindingList<Part> AssociatedParts;
         public int ProductId;
         public string Name;
@@ -35,8 +33,8 @@ namespace InventoryManager_C968.Models
             return AssociatedParts.Remove(part); 
         }
 
-        public Part lookupAssociatedPart(int partId) {
-            return AssociatedParts.First(p => p.PartID == partId);
+        public Part? lookupAssociatedPart(int partId) {
+            return AssociatedParts.FirstOrDefault(p => p.PartID == partId);
         }
 
     }

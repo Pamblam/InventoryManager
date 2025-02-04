@@ -1,0 +1,17 @@
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\bin\Debug\net9.0-windows\InventoryManager-C968.exe
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\bin\Debug\net9.0-windows\InventoryManager-C968.deps.json
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\bin\Debug\net9.0-windows\InventoryManager-C968.runtimeconfig.json
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\bin\Debug\net9.0-windows\InventoryManager-C968.dll
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\bin\Debug\net9.0-windows\InventoryManager-C968.pdb
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager_C968.MainScreen.resources
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.csproj.GenerateResource.cache
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.AssemblyInfoInputs.cache
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.AssemblyInfo.cs
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.csproj.CoreCompileInputs.cache
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.sourcelink.json
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.dll
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\refint\InventoryManager-C968.dll
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.pdb
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\InventoryManager-C968.genruntimeconfig.cache
+C:\Users\adelphia\Desktop\dotnet\C968\InventoryManager-C968\obj\Debug\net9.0-windows\ref\InventoryManager-C968.dll
