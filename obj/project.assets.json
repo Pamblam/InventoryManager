@@ -8,23 +8,23 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\adelphia\\.nuget\\packages\\": {},
+    "C:\\Users\\Adelphia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adelphia\\Desktop\\dotnet\\C968\\InventoryManager-C968\\InventoryManager-C968.csproj",
+      "projectUniqueName": "C:\\Users\\Adelphia\\Desktop\\dotnet\\InventoryManager\\InventoryManager-C968.csproj",
       "projectName": "InventoryManager-C968",
-      "projectPath": "C:\\Users\\adelphia\\Desktop\\dotnet\\C968\\InventoryManager-C968\\InventoryManager-C968.csproj",
-      "packagesPath": "C:\\Users\\adelphia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adelphia\\Desktop\\dotnet\\C968\\InventoryManager-C968\\obj\\",
+      "projectPath": "C:\\Users\\Adelphia\\Desktop\\dotnet\\InventoryManager\\InventoryManager-C968.csproj",
+      "packagesPath": "C:\\Users\\Adelphia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adelphia\\Desktop\\dotnet\\InventoryManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\adelphia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adelphia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

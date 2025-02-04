@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace InventoryManager_C968 {
     public class OutSourced : Part {
-        public string CompanyName;
+        public string CompanyName { get; set; }
 
         public OutSourced(String companyName, int partID, string name, decimal price, int inStock, int min, int max) {
             CompanyName = companyName;

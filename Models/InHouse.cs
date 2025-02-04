@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InventoryManager_C968 {
     internal class InHouse : Part {
-        public int MachineId;
+        public int MachineId { get; set; }
 
         public InHouse(int machineId, int partID, string name, decimal price, int inStock, int min, int max) {
             MachineId = machineId;

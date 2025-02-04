@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace InventoryManager_C968 {
     public abstract class Part {
-        public int PartID;
-        public string Name;
-        public decimal Price;
-        public int InStock;
-        public int Min;
-        public int Max;
+        public int PartID { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public int InStock { get; set; }
+        public int Min { get; set; }
+        public int Max { get; set; }
     }
 }
