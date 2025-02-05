@@ -22,13 +22,25 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             headerLabel = new Label();
-            tableContainer = new TableLayoutPanel();
             partsTable = new DataGridView();
-            tableContainer.SuspendLayout();
+            productsTable = new DataGridView();
+            partsSearchInput = new TextBox();
+            productSearchInput = new TextBox();
+            partsSearchBtn = new Button();
+            productsSearchBtn = new Button();
+            partsLabel = new Label();
+            productsLabel = new Label();
+            partsDeleteBtn = new Button();
+            partsModifyBtn = new Button();
+            partsAddBtn = new Button();
+            productsDeleteBtn = new Button();
+            productModifyBtn = new Button();
+            productsAddBtn = new Button();
+            exitBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)partsTable).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productsTable).BeginInit();
             SuspendLayout();
             // 
             // headerLabel
@@ -41,41 +53,168 @@
             headerLabel.Size = new Size(250, 21);
             headerLabel.TabIndex = 0;
             headerLabel.Text = "Inventory Management System";
-            headerLabel.Click += label1_Click;
-            // 
-            // tableContainer
-            // 
-            tableContainer.ColumnCount = 2;
-            tableContainer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableContainer.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableContainer.Controls.Add(partsTable, 0, 0);
-            tableContainer.Location = new Point(12, 58);
-            tableContainer.Name = "tableContainer";
-            tableContainer.RowCount = 1;
-            tableContainer.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableContainer.Size = new Size(776, 245);
-            tableContainer.TabIndex = 1;
             // 
             // partsTable
             // 
             partsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            partsTable.Dock = DockStyle.Fill;
-            partsTable.Location = new Point(3, 3);
+            partsTable.Location = new Point(12, 77);
             partsTable.Name = "partsTable";
-            partsTable.Size = new Size(382, 239);
-            partsTable.TabIndex = 0;
+            partsTable.RowHeadersVisible = false;
+            partsTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            partsTable.Size = new Size(579, 360);
+            partsTable.TabIndex = 1;
+            // 
+            // productsTable
+            // 
+            productsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            productsTable.Location = new Point(615, 77);
+            productsTable.Name = "productsTable";
+            productsTable.RowHeadersVisible = false;
+            productsTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            productsTable.Size = new Size(579, 360);
+            productsTable.TabIndex = 2;
+            // 
+            // partsSearchInput
+            // 
+            partsSearchInput.Location = new Point(309, 48);
+            partsSearchInput.Name = "partsSearchInput";
+            partsSearchInput.Size = new Size(282, 23);
+            partsSearchInput.TabIndex = 3;
+            // 
+            // productSearchInput
+            // 
+            productSearchInput.Location = new Point(912, 48);
+            productSearchInput.Name = "productSearchInput";
+            productSearchInput.Size = new Size(282, 23);
+            productSearchInput.TabIndex = 4;
+            // 
+            // partsSearchBtn
+            // 
+            partsSearchBtn.Location = new Point(228, 48);
+            partsSearchBtn.Name = "partsSearchBtn";
+            partsSearchBtn.Size = new Size(75, 23);
+            partsSearchBtn.TabIndex = 5;
+            partsSearchBtn.Text = "Search";
+            partsSearchBtn.UseVisualStyleBackColor = true;
+            // 
+            // productsSearchBtn
+            // 
+            productsSearchBtn.Location = new Point(831, 48);
+            productsSearchBtn.Name = "productsSearchBtn";
+            productsSearchBtn.Size = new Size(75, 23);
+            productsSearchBtn.TabIndex = 6;
+            productsSearchBtn.Text = "Search";
+            productsSearchBtn.UseVisualStyleBackColor = true;
+            // 
+            // partsLabel
+            // 
+            partsLabel.AutoSize = true;
+            partsLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            partsLabel.Location = new Point(12, 52);
+            partsLabel.Name = "partsLabel";
+            partsLabel.Size = new Size(35, 15);
+            partsLabel.TabIndex = 7;
+            partsLabel.Text = "Parts";
+            // 
+            // productsLabel
+            // 
+            productsLabel.AutoSize = true;
+            productsLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            productsLabel.Location = new Point(615, 52);
+            productsLabel.Name = "productsLabel";
+            productsLabel.Size = new Size(56, 15);
+            productsLabel.TabIndex = 8;
+            productsLabel.Text = "Products";
+            // 
+            // partsDeleteBtn
+            // 
+            partsDeleteBtn.Location = new Point(516, 443);
+            partsDeleteBtn.Name = "partsDeleteBtn";
+            partsDeleteBtn.Size = new Size(75, 23);
+            partsDeleteBtn.TabIndex = 9;
+            partsDeleteBtn.Text = "Delete";
+            partsDeleteBtn.UseVisualStyleBackColor = true;
+            // 
+            // partsModifyBtn
+            // 
+            partsModifyBtn.Location = new Point(435, 443);
+            partsModifyBtn.Name = "partsModifyBtn";
+            partsModifyBtn.Size = new Size(75, 23);
+            partsModifyBtn.TabIndex = 10;
+            partsModifyBtn.Text = "Modify";
+            partsModifyBtn.UseVisualStyleBackColor = true;
+            // 
+            // partsAddBtn
+            // 
+            partsAddBtn.Location = new Point(354, 443);
+            partsAddBtn.Name = "partsAddBtn";
+            partsAddBtn.Size = new Size(75, 23);
+            partsAddBtn.TabIndex = 11;
+            partsAddBtn.Text = "Add";
+            partsAddBtn.UseVisualStyleBackColor = true;
+            // 
+            // productsDeleteBtn
+            // 
+            productsDeleteBtn.Location = new Point(1119, 443);
+            productsDeleteBtn.Name = "productsDeleteBtn";
+            productsDeleteBtn.Size = new Size(75, 23);
+            productsDeleteBtn.TabIndex = 12;
+            productsDeleteBtn.Text = "Delete";
+            productsDeleteBtn.UseVisualStyleBackColor = true;
+            // 
+            // productModifyBtn
+            // 
+            productModifyBtn.Location = new Point(1038, 443);
+            productModifyBtn.Name = "productModifyBtn";
+            productModifyBtn.Size = new Size(75, 23);
+            productModifyBtn.TabIndex = 13;
+            productModifyBtn.Text = "Modify";
+            productModifyBtn.UseVisualStyleBackColor = true;
+            // 
+            // productsAddBtn
+            // 
+            productsAddBtn.Location = new Point(957, 443);
+            productsAddBtn.Name = "productsAddBtn";
+            productsAddBtn.Size = new Size(75, 23);
+            productsAddBtn.TabIndex = 14;
+            productsAddBtn.Text = "Add";
+            productsAddBtn.UseVisualStyleBackColor = true;
+            // 
+            // exitBtn
+            // 
+            exitBtn.Location = new Point(1123, 472);
+            exitBtn.Name = "exitBtn";
+            exitBtn.Size = new Size(75, 23);
+            exitBtn.TabIndex = 15;
+            exitBtn.Text = "Exit";
+            exitBtn.UseVisualStyleBackColor = true;
             // 
             // MainScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tableContainer);
+            ClientSize = new Size(1210, 507);
+            Controls.Add(exitBtn);
+            Controls.Add(productsAddBtn);
+            Controls.Add(productModifyBtn);
+            Controls.Add(productsDeleteBtn);
+            Controls.Add(partsAddBtn);
+            Controls.Add(partsModifyBtn);
+            Controls.Add(partsDeleteBtn);
+            Controls.Add(productsLabel);
+            Controls.Add(partsLabel);
+            Controls.Add(productsSearchBtn);
+            Controls.Add(partsSearchBtn);
+            Controls.Add(productSearchInput);
+            Controls.Add(partsSearchInput);
+            Controls.Add(productsTable);
+            Controls.Add(partsTable);
             Controls.Add(headerLabel);
+            MinimumSize = new Size(1226, 546);
             Name = "MainScreen";
             Text = "Main Screen";
-            tableContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)partsTable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productsTable).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -83,7 +222,20 @@
         #endregion
 
         private Label headerLabel;
-        private TableLayoutPanel tableContainer;
         private DataGridView partsTable;
+        private DataGridView productsTable;
+        private TextBox partsSearchInput;
+        private TextBox productSearchInput;
+        private Button partsSearchBtn;
+        private Button productsSearchBtn;
+        private Label partsLabel;
+        private Label productsLabel;
+        private Button partsDeleteBtn;
+        private Button partsModifyBtn;
+        private Button partsAddBtn;
+        private Button productsDeleteBtn;
+        private Button productModifyBtn;
+        private Button productsAddBtn;
+        private Button exitBtn;
     }
-}
+} // 11 - cpt test ( 12/20 -  )

@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace InventoryManager_C968 {
     public class Product {
         public BindingList<Part> AssociatedParts;
-        public int ProductId;
-        public string Name;
-        public decimal Price;
-        public int InStock;
-        public int Min;
-        public int Max;
+        public int ProductId { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+        public int InStock { get; set; }
+        public int Min { get; set; }
+        public int Max { get; set; }
 
         public Product(int productId, string name, decimal price, int inStock, int min, int max) {
             AssociatedParts = new BindingList<Part>();
