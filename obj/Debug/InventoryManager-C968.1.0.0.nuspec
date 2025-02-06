@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>InventoryManager-C968</id>
+    <version>1.0.0</version>
+    <authors>InventoryManager-C968</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="4d9fdaa832356645c3bd4800b68ddf36f6b6795d" />
+    <dependencies>
+      <group targetFramework="net9.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net9.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Adelphia\Desktop\dotnet\InventoryManager\bin\Debug\net9.0-windows\InventoryManager-C968.runtimeconfig.json" target="lib\net9.0-windows7.0\InventoryManager-C968.runtimeconfig.json" />
+    <file src="C:\Users\Adelphia\Desktop\dotnet\InventoryManager\bin\Debug\net9.0-windows\InventoryManager-C968.dll" target="lib\net9.0-windows7.0\InventoryManager-C968.dll" />
+  </files>
+</package>

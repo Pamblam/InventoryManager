@@ -1,0 +1,389 @@
+[
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 12345,
+        "name": "Super Tire",
+        "price": 19.25,
+        "in_stock": 12,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 45823,
+        "name": "Lightning Chain",
+        "price": 14.99,
+        "in_stock": 20,
+        "min": 10,
+        "max": 50
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 76219,
+        "name": "Mountain Grip",
+        "price": 9.75,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Urban Riders",
+        "part_id": 23845,
+        "name": "City Slicker Seat",
+        "price": 27.50,
+        "in_stock": 18,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Velocity Components",
+        "part_id": 98432,
+        "name": "Turbo Pedals",
+        "price": 22.89,
+        "in_stock": 25,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Revolution Wheels",
+        "part_id": 53728,
+        "name": "All-Terrain Tire",
+        "price": 31.49,
+        "in_stock": 28,
+        "min": 10,
+        "max": 35
+    },
+    {
+        "company": "Rapid Gear",
+        "part_id": 67521,
+        "name": "Ultra Light Crankset",
+        "price": 89.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Cyclone Innovations",
+        "part_id": 82167,
+        "name": "WindCutter Handlebars",
+        "price": 42.75,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 61927,
+        "name": "ShockStop Suspension",
+        "price": 64.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 31276,
+        "name": "SpeedMaster Chainring",
+        "price": 35.95,
+        "in_stock": 22,
+        "min": 10,
+        "max": 30
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 84952,
+        "name": "Rugged Frame Guard",
+        "price": 18.79,
+        "in_stock": 14,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Urban Riders",
+        "part_id": 67342,
+        "name": "Metro Reflector Set",
+        "price": 8.99,
+        "in_stock": 30,
+        "min": 10,
+        "max": 50
+    },
+    {
+        "company": "Velocity Components",
+        "part_id": 57431,
+        "name": "Aero Race Wheels",
+        "price": 129.99,
+        "in_stock": 8,
+        "min": 3,
+        "max": 15
+    },
+    {
+        "company": "Revolution Wheels",
+        "part_id": 92843,
+        "name": "Pro Spokes Set",
+        "price": 24.50,
+        "in_stock": 20,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Rapid Gear",
+        "part_id": 43871,
+        "name": "Titanium Brake Levers",
+        "price": 56.75,
+        "in_stock": 9,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Cyclone Innovations",
+        "part_id": 75638,
+        "name": "Storm Proof Fenders",
+        "price": 34.25,
+        "in_stock": 12,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 59283,
+        "name": "Power Grip Handlebar Tape",
+        "price": 16.95,
+        "in_stock": 18,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 46239,
+        "name": "Endurance Saddle",
+        "price": 49.99,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 98752,
+        "name": "Trail Boss Rear Derailleur",
+        "price": 74.50,
+        "in_stock": 10,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Urban Riders",
+        "part_id": 62847,
+        "name": "Compact Kickstand",
+        "price": 12.99,
+        "in_stock": 25,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Velocity Components",
+        "part_id": 73148,
+        "name": "Carbon Fiber Fork",
+        "price": 199.99,
+        "in_stock": 6,
+        "min": 2,
+        "max": 10
+    },
+    {
+        "company": "Revolution Wheels",
+        "part_id": 85741,
+        "name": "Pro Race Cassette",
+        "price": 59.95,
+        "in_stock": 14,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Rapid Gear",
+        "part_id": 41297,
+        "name": "Performance Disc Brakes",
+        "price": 89.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Cyclone Innovations",
+        "part_id": 64175,
+        "name": "All-Weather Brake Pads",
+        "price": 9.50,
+        "in_stock": 22,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 28465,
+        "name": "Puncture Proof Tubes",
+        "price": 11.99,
+        "in_stock": 30,
+        "min": 10,
+        "max": 50
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 35971,
+        "name": "High-Pressure Tire Pump",
+        "price": 24.50,
+        "in_stock": 18,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 48932,
+        "name": "Heavy-Duty Chain",
+        "price": 19.75,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Urban Riders",
+        "part_id": 67429,
+        "name": "Reflective Spoke Covers",
+        "price": 7.49,
+        "in_stock": 28,
+        "min": 10,
+        "max": 50
+    },
+    {
+        "company": "Velocity Components",
+        "part_id": 79843,
+        "name": "Lightweight Seatpost",
+        "price": 44.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Revolution Wheels",
+        "part_id": 95371,
+        "name": "Aero Racing Stem",
+        "price": 39.95,
+        "in_stock": 14,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Rapid Gear",
+        "part_id": 51729,
+        "name": "Aluminum Flat Pedals",
+        "price": 29.75,
+        "in_stock": 16,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Cyclone Innovations",
+        "part_id": 68143,
+        "name": "Foldable Bike Stand",
+        "price": 54.99,
+        "in_stock": 8,
+        "min": 3,
+        "max": 15
+    },
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 73942,
+        "name": "Ultra Grip Pedal Straps",
+        "price": 18.95,
+        "in_stock": 25,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 89243,
+        "name": "Racer Clipless Pedals",
+        "price": 89.50,
+        "in_stock": 9,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 25184,
+        "name": "Adventure Shock Fork",
+        "price": 179.99,
+        "in_stock": 7,
+        "min": 3,
+        "max": 15
+    },
+    {
+        "company": "Urban Riders",
+        "part_id": 51932,
+        "name": "Compact Bike Light Set",
+        "price": 24.95,
+        "in_stock": 22,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "company": "Velocity Components",
+        "part_id": 37514,
+        "name": "Pro Alloy Handlebars",
+        "price": 55.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Revolution Wheels",
+        "part_id": 69741,
+        "name": "Durable Chain Guard",
+        "price": 14.25,
+        "in_stock": 28,
+        "min": 10,
+        "max": 50
+    },
+    {
+        "company": "Rapid Gear",
+        "part_id": 81234,
+        "name": "Carbon Seat Post",
+        "price": 99.99,
+        "in_stock": 6,
+        "min": 2,
+        "max": 10
+    },
+    {
+        "company": "Cyclone Innovations",
+        "part_id": 54287,
+        "name": "Weatherproof Saddle Bag",
+        "price": 27.75,
+        "in_stock": 18,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "company": "Mike's Bike Parts",
+        "part_id": 65871,
+        "name": "Compact Multi-Tool",
+        "price": 21.99,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "company": "Speedy Cycles",
+        "part_id": 76923,
+        "name": "Ultra Light Stem",
+        "price": 34.50,
+        "in_stock": 12,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "company": "Trail Blazers",
+        "part_id": 92456,
+        "name": "Rugged Water Bottle Cage",
+        "price": 9.99,
+        "in_stock": 30,
+        "min": 10,
+        "max": 50
+    }
+]

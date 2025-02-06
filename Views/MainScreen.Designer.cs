@@ -148,6 +148,7 @@
             partsModifyBtn.TabIndex = 10;
             partsModifyBtn.Text = "Modify";
             partsModifyBtn.UseVisualStyleBackColor = true;
+            partsModifyBtn.Click += partsModifyBtn_Click;
             // 
             // partsAddBtn
             // 
@@ -157,6 +158,7 @@
             partsAddBtn.TabIndex = 11;
             partsAddBtn.Text = "Add";
             partsAddBtn.UseVisualStyleBackColor = true;
+            partsAddBtn.Click += partsAddBtn_Click;
             // 
             // productsDeleteBtn
             // 
@@ -176,6 +178,7 @@
             productModifyBtn.TabIndex = 13;
             productModifyBtn.Text = "Modify";
             productModifyBtn.UseVisualStyleBackColor = true;
+            productModifyBtn.Click += productModifyBtn_Click;
             // 
             // productsAddBtn
             // 
@@ -185,6 +188,7 @@
             productsAddBtn.TabIndex = 14;
             productsAddBtn.Text = "Add";
             productsAddBtn.UseVisualStyleBackColor = true;
+            productsAddBtn.Click += productsAddBtn_Click;
             // 
             // exitBtn
             // 

@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using InventoryManager_C968;
+using InventoryManager_C968.Views;
+using static System.Windows.Forms.DataFormats;
 
 namespace InventoryManager_C968 {
     public partial class MainScreen : Form {
@@ -60,6 +62,9 @@ namespace InventoryManager_C968 {
             col6.DataPropertyName = "Max";
             productsTable.Columns.Add(col6);
 
+            productsTable.MultiSelect = false;
+            productsTable.AllowUserToResizeColumns = false;
+            productsTable.AllowUserToResizeRows = false;
             productsTable.ReadOnly = true;
             productsTable.DataSource = this.inventory.Products;
         }
@@ -110,6 +115,9 @@ namespace InventoryManager_C968 {
             col6.DataPropertyName = "Max";
             partsTable.Columns.Add(col6);
 
+            partsTable.MultiSelect = false;
+            partsTable.AllowUserToResizeColumns = false;
+            partsTable.AllowUserToResizeRows = false;
             partsTable.ReadOnly = true;
             partsTable.DataSource = this.inventory.AllParts;
         }
@@ -169,33 +177,77 @@ namespace InventoryManager_C968 {
         }
 
         private void partsDeleteBtn_Click(object sender, EventArgs e) {
-            if (partsTable.SelectedRows.Count > 0) {
-                DataGridViewRow selectedRow = partsTable.SelectedRows[0];
-                var partId = Convert.ToInt16(selectedRow.Cells["PartID"].Value);
-                foreach (Part part in this.inventory.AllParts) {
-                    if (partId == part.PartID) {
-                        this.inventory.deletePart(part);
-                        break;
-                    }
-                }
+            Part part = getSelectedPart();
+            if (part != null) {
+                this.inventory.deletePart(part);
             }
         }
 
         private void productsDeleteBtn_Click(object sender, EventArgs e) {
-            if (productsTable.SelectedRows.Count > 0) {
-                DataGridViewRow selectedRow = productsTable.SelectedRows[0];
-                var productId = Convert.ToInt16(selectedRow.Cells["ProductID"].Value);
-                foreach (Product product in this.inventory.Products) {
-                    if (productId == product.ProductId) {
-                        this.inventory.removeProduct(product);
-                        break;
-                    }
-                }
+            Product? product = getSelectedProduct();
+            if (product != null) {
+                this.inventory.removeProduct(product);
             }
         }
 
         private void exitBtn_Click(object sender, EventArgs e) {
             Application.Exit();
+        }
+
+        private void partsAddBtn_Click(object sender, EventArgs e) {
+            PartScreen screen = new PartScreen();
+            screen.ShowDialog();
+        }
+
+        private void productsAddBtn_Click(object sender, EventArgs e) {
+            ProductScreen screen = new ProductScreen();
+            screen.ShowDialog();
+
+
+        }
+
+        private void partsModifyBtn_Click(object sender, EventArgs e) {
+            Part? part = getSelectedPart();
+            if (part != null) {
+                PartScreen screen = new PartScreen(part);
+                screen.ShowDialog();
+            }
+        }
+
+        private Part? getSelectedPart() {
+            if (partsTable.SelectedRows.Count > 0) {
+                DataGridViewRow selectedRow = partsTable.SelectedRows[0];
+                var partId = Convert.ToInt16(selectedRow.Cells["PartID"].Value);
+                foreach (Part part in this.inventory.AllParts) {
+                    if (partId == part.PartID) {
+                        return part;
+                    }
+                }
+            }
+            MessageBox.Show("No part selected.", "Alert", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            return null;
+        }
+
+        private Product? getSelectedProduct() {
+            if (productsTable.SelectedRows.Count > 0) {
+                DataGridViewRow selectedRow = productsTable.SelectedRows[0];
+                var productId = Convert.ToInt16(selectedRow.Cells["ProductID"].Value);
+                foreach (Product product in this.inventory.Products) {
+                    if (productId == product.ProductId) {
+                        return product;
+                    }
+                }
+            }
+            MessageBox.Show("No product selected.", "Alert", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            return null;
+        }
+
+        private void productModifyBtn_Click(object sender, EventArgs e) {
+            Product? product = getSelectedProduct();
+            if (product != null) {
+                ProductScreen screen = new ProductScreen(product);
+                screen.ShowDialog();
+            }
         }
     }
 }

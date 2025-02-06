@@ -1,0 +1,578 @@
+[
+    {
+        "product_id": 10234,
+        "name": "Super Speeder Bike",
+        "price": 799.99,
+        "in_stock": 20,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "product_id": 10235,
+        "name": "Mountain Master 5000",
+        "price": 599.99,
+        "in_stock": 15,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "product_id": 10236,
+        "name": "Turbo Trail Explorer",
+        "price": 899.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10237,
+        "name": "Eco Rider Commuter",
+        "price": 349.99,
+        "in_stock": 30,
+        "min": 15,
+        "max": 40
+    },
+    {
+        "product_id": 10238,
+        "name": "Speedster Carbon 900",
+        "price": 1299.99,
+        "in_stock": 8,
+        "min": 3,
+        "max": 12
+    },
+    {
+        "product_id": 10239,
+        "name": "Cyclo Cruiser",
+        "price": 499.99,
+        "in_stock": 25,
+        "min": 10,
+        "max": 35
+    },
+    {
+        "product_id": 10240,
+        "name": "Street Racer X",
+        "price": 749.99,
+        "in_stock": 18,
+        "min": 8,
+        "max": 20
+    },
+    {
+        "product_id": 10241,
+        "name": "Elite Triathlon Bike",
+        "price": 1999.99,
+        "in_stock": 5,
+        "min": 2,
+        "max": 7
+    },
+    {
+        "product_id": 10242,
+        "name": "VeloTrack Pro",
+        "price": 1199.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10243,
+        "name": "City Commuter 200",
+        "price": 399.99,
+        "in_stock": 40,
+        "min": 15,
+        "max": 50
+    },
+    {
+        "product_id": 10244,
+        "name": "Mountain Beast 3000",
+        "price": 899.99,
+        "in_stock": 20,
+        "min": 8,
+        "max": 20
+    },
+    {
+        "product_id": 10245,
+        "name": "Adventure Explorer",
+        "price": 649.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10246,
+        "name": "Fast Roadster",
+        "price": 499.99,
+        "in_stock": 22,
+        "min": 12,
+        "max": 30
+    },
+    {
+        "product_id": 10247,
+        "name": "Urban Cruiser 360",
+        "price": 359.99,
+        "in_stock": 35,
+        "min": 15,
+        "max": 45
+    },
+    {
+        "product_id": 10248,
+        "name": "Rogue BMX",
+        "price": 299.99,
+        "in_stock": 50,
+        "min": 25,
+        "max": 60
+    },
+    {
+        "product_id": 10249,
+        "name": "Speedster 2000",
+        "price": 799.99,
+        "in_stock": 13,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "product_id": 10250,
+        "name": "Cycling Pro 400",
+        "price": 549.99,
+        "in_stock": 27,
+        "min": 10,
+        "max": 40
+    },
+    {
+        "product_id": 10251,
+        "name": "Hybrid Trekker",
+        "price": 649.99,
+        "in_stock": 18,
+        "min": 8,
+        "max": 15
+    },
+    {
+        "product_id": 10252,
+        "name": "RoadMaster Elite",
+        "price": 1099.99,
+        "in_stock": 7,
+        "min": 3,
+        "max": 10
+    },
+    {
+        "product_id": 10253,
+        "name": "Commuter S1",
+        "price": 399.99,
+        "in_stock": 25,
+        "min": 12,
+        "max": 30
+    },
+    {
+        "product_id": 10254,
+        "name": "SuperFly X",
+        "price": 849.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10255,
+        "name": "Ultimate Pro Racing",
+        "price": 1499.99,
+        "in_stock": 4,
+        "min": 2,
+        "max": 5
+    },
+    {
+        "product_id": 10256,
+        "name": "City Sport 500",
+        "price": 299.99,
+        "in_stock": 50,
+        "min": 25,
+        "max": 60
+    },
+    {
+        "product_id": 10257,
+        "name": "CycloMax 600",
+        "price": 799.99,
+        "in_stock": 20,
+        "min": 10,
+        "max": 30
+    },
+    {
+        "product_id": 10258,
+        "name": "Adventure 8000",
+        "price": 699.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10259,
+        "name": "MountainKing 900",
+        "price": 849.99,
+        "in_stock": 15,
+        "min": 8,
+        "max": 20
+    },
+    {
+        "product_id": 10260,
+        "name": "Roadie 2020",
+        "price": 999.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 12
+    },
+    {
+        "product_id": 10261,
+        "name": "Peak Performance 400",
+        "price": 799.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "product_id": 10262,
+        "name": "TrackMaster 500",
+        "price": 559.99,
+        "in_stock": 15,
+        "min": 8,
+        "max": 18
+    },
+    {
+        "product_id": 10263,
+        "name": "EcoCommuter 100",
+        "price": 259.99,
+        "in_stock": 40,
+        "min": 20,
+        "max": 50
+    },
+    {
+        "product_id": 10264,
+        "name": "City Sprint 700",
+        "price": 459.99,
+        "in_stock": 25,
+        "min": 10,
+        "max": 30
+    },
+    {
+        "product_id": 10265,
+        "name": "Enduro Cycle 300",
+        "price": 649.99,
+        "in_stock": 12,
+        "min": 6,
+        "max": 20
+    },
+    {
+        "product_id": 10266,
+        "name": "Cross-Terrain Rider",
+        "price": 799.99,
+        "in_stock": 15,
+        "min": 8,
+        "max": 18
+    },
+    {
+        "product_id": 10267,
+        "name": "X-Style Cruiser",
+        "price": 399.99,
+        "in_stock": 50,
+        "min": 25,
+        "max": 60
+    },
+    {
+        "product_id": 10268,
+        "name": "Superfly X Pro",
+        "price": 899.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 12
+    },
+    {
+        "product_id": 10269,
+        "name": "Mountain Explorer 250",
+        "price": 699.99,
+        "in_stock": 8,
+        "min": 5,
+        "max": 10
+    },
+    {
+        "product_id": 10270,
+        "name": "Rider's Dream",
+        "price": 1399.99,
+        "in_stock": 5,
+        "min": 2,
+        "max": 5
+    },
+    {
+        "product_id": 10271,
+        "name": "Ultimate All-Terrain",
+        "price": 799.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 18
+    },
+    {
+        "product_id": 10272,
+        "name": "City Pro 2020",
+        "price": 459.99,
+        "in_stock": 25,
+        "min": 15,
+        "max": 35
+    },
+    {
+        "product_id": 10273,
+        "name": "TrailBlazer 400",
+        "price": 749.99,
+        "in_stock": 8,
+        "min": 4,
+        "max": 12
+    },
+    {
+        "product_id": 10274,
+        "name": "Street Racer 300",
+        "price": 599.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10275,
+        "name": "Hyperbike X",
+        "price": 999.99,
+        "in_stock": 7,
+        "min": 3,
+        "max": 12
+    },
+    {
+        "product_id": 10276,
+        "name": "Commuter 900",
+        "price": 499.99,
+        "in_stock": 30,
+        "min": 15,
+        "max": 40
+    },
+    {
+        "product_id": 10277,
+        "name": "TrailMaster 2000",
+        "price": 849.99,
+        "in_stock": 9,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10278,
+        "name": "Velocity 5000",
+        "price": 1099.99,
+        "in_stock": 6,
+        "min": 3,
+        "max": 7
+    },
+    {
+        "product_id": 10279,
+        "name": "AdventurePro 100",
+        "price": 649.99,
+        "in_stock": 15,
+        "min": 8,
+        "max": 20
+    },
+    {
+        "product_id": 10280,
+        "name": "CycloTourer Elite",
+        "price": 799.99,
+        "in_stock": 12,
+        "min": 6,
+        "max": 15
+    },
+    {
+        "product_id": 10281,
+        "name": "Xtreme Pro Road",
+        "price": 1099.99,
+        "in_stock": 7,
+        "min": 4,
+        "max": 10
+    },
+    {
+        "product_id": 10282,
+        "name": "SpeedRush 700",
+        "price": 549.99,
+        "in_stock": 18,
+        "min": 8,
+        "max": 25
+    },
+    {
+        "product_id": 10283,
+        "name": "Enduro Pro 350",
+        "price": 499.99,
+        "in_stock": 25,
+        "min": 12,
+        "max": 35
+    },
+    {
+        "product_id": 10284,
+        "name": "City Ride 800",
+        "price": 699.99,
+        "in_stock": 14,
+        "min": 7,
+        "max": 15
+    },
+    {
+        "product_id": 10285,
+        "name": "Speed Master 500",
+        "price": 449.99,
+        "in_stock": 20,
+        "min": 10,
+        "max": 25
+    },
+    {
+        "product_id": 10286,
+        "name": "Rugged Trailbike",
+        "price": 799.99,
+        "in_stock": 9,
+        "min": 5,
+        "max": 12
+    },
+    {
+        "product_id": 10287,
+        "name": "City Speedster",
+        "price": 399.99,
+        "in_stock": 40,
+        "min": 20,
+        "max": 50
+    },
+    {
+        "product_id": 10288,
+        "name": "Highland Rider",
+        "price": 599.99,
+        "in_stock": 8,
+        "min": 5,
+        "max": 12
+    },
+    {
+        "product_id": 10289,
+        "name": "Dual-Sport Cycle",
+        "price": 449.99,
+        "in_stock": 30,
+        "min": 15,
+        "max": 40
+    },
+    {
+        "product_id": 10290,
+        "name": "Stealth Racer",
+        "price": 899.99,
+        "in_stock": 6,
+        "min": 3,
+        "max": 7
+    },
+    {
+        "product_id": 10291,
+        "name": "TrailX 3000",
+        "price": 799.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 12
+    },
+    {
+        "product_id": 10292,
+        "name": "Pro-Track 250",
+        "price": 549.99,
+        "in_stock": 18,
+        "min": 8,
+        "max": 20
+    },
+    {
+        "product_id": 10293,
+        "name": "Eco-Rider Classic",
+        "price": 399.99,
+        "in_stock": 25,
+        "min": 12,
+        "max": 30
+    },
+    {
+        "product_id": 10294,
+        "name": "Super Trekker X",
+        "price": 599.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10295,
+        "name": "Speedster 500",
+        "price": 749.99,
+        "in_stock": 15,
+        "min": 7,
+        "max": 20
+    },
+    {
+        "product_id": 10296,
+        "name": "EcoCruiser 100",
+        "price": 259.99,
+        "in_stock": 45,
+        "min": 20,
+        "max": 55
+    },
+    {
+        "product_id": 10297,
+        "name": "FlexPro 400",
+        "price": 649.99,
+        "in_stock": 13,
+        "min": 6,
+        "max": 20
+    },
+    {
+        "product_id": 10298,
+        "name": "Velocity 500",
+        "price": 499.99,
+        "in_stock": 25,
+        "min": 12,
+        "max": 35
+    },
+    {
+        "product_id": 10299,
+        "name": "Urban Xtreme",
+        "price": 799.99,
+        "in_stock": 9,
+        "min": 4,
+        "max": 12
+    },
+    {
+        "product_id": 10300,
+        "name": "Pro Roadster",
+        "price": 1099.99,
+        "in_stock": 7,
+        "min": 3,
+        "max": 10
+    },
+    {
+        "product_id": 10301,
+        "name": "SmartCity 300",
+        "price": 379.99,
+        "in_stock": 35,
+        "min": 15,
+        "max": 40
+    },
+    {
+        "product_id": 10302,
+        "name": "HyperSport 600",
+        "price": 549.99,
+        "in_stock": 18,
+        "min": 8,
+        "max": 25
+    },
+    {
+        "product_id": 10303,
+        "name": "MountainGoat 500",
+        "price": 699.99,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "product_id": 10304,
+        "name": "AdventurePro 700",
+        "price": 799.99,
+        "in_stock": 13,
+        "min": 5,
+        "max": 18
+    },
+    {
+        "product_id": 10305,
+        "name": "SpeedX Rider",
+        "price": 599.99,
+        "in_stock": 15,
+        "min": 8,
+        "max": 20
+    }
+]

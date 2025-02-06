@@ -1,0 +1,416 @@
+[
+    {
+        "machine_id": 10234,
+        "part_id": 12345,
+        "name": "Turbo Chain",
+        "price": 15.99,
+        "in_stock": 18,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "machine_id": 14321,
+        "part_id": 54321,
+        "name": "Ultra Brake Pads",
+        "price": 8.50,
+        "in_stock": 10,
+        "min": 3,
+        "max": 20
+    },
+    {
+        "machine_id": 18765,
+        "part_id": 67890,
+        "name": "Titanium Pedals",
+        "price": 27.75,
+        "in_stock": 9,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "machine_id": 19876,
+        "part_id": 23456,
+        "name": "Speedster Tires",
+        "price": 34.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "machine_id": 15678,
+        "part_id": 98765,
+        "name": "Aero Handlebars",
+        "price": 45.25,
+        "in_stock": 7,
+        "min": 2,
+        "max": 10
+    },
+    {
+        "machine_id": 10987,
+        "part_id": 34567,
+        "name": "Carbon Fiber Frame",
+        "price": 499.99,
+        "in_stock": 4,
+        "min": 1,
+        "max": 5
+    },
+    {
+        "machine_id": 13456,
+        "part_id": 87654,
+        "name": "Shock Absorber Fork",
+        "price": 120.75,
+        "in_stock": 6,
+        "min": 3,
+        "max": 12
+    },
+    {
+        "machine_id": 17654,
+        "part_id": 56789,
+        "name": "Racing Saddle",
+        "price": 65.00,
+        "in_stock": 8,
+        "min": 4,
+        "max": 10
+    },
+    {
+        "machine_id": 18932,
+        "part_id": 65432,
+        "name": "Hydraulic Disc Brakes",
+        "price": 95.50,
+        "in_stock": 10,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "machine_id": 12345,
+        "part_id": 76543,
+        "name": "Lightweight Wheelset",
+        "price": 299.99,
+        "in_stock": 3,
+        "min": 1,
+        "max": 5
+    },
+    {
+        "machine_id": 23456,
+        "part_id": 87653,
+        "name": "Chain Guard",
+        "price": 19.95,
+        "in_stock": 15,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "machine_id": 34567,
+        "part_id": 98764,
+        "name": "Anti-Rust Chain",
+        "price": 22.99,
+        "in_stock": 14,
+        "min": 6,
+        "max": 20
+    },
+    {
+        "machine_id": 45678,
+        "part_id": 29876,
+        "name": "Ultra Grip Handlebar Tape",
+        "price": 12.50,
+        "in_stock": 16,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "machine_id": 56789,
+        "part_id": 10987,
+        "name": "High-Performance Derailleur",
+        "price": 79.99,
+        "in_stock": 6,
+        "min": 2,
+        "max": 10
+    },
+    {
+        "machine_id": 67890,
+        "part_id": 21098,
+        "name": "Electric Bike Motor",
+        "price": 599.99,
+        "in_stock": 2,
+        "min": 1,
+        "max": 4
+    },
+    {
+        "machine_id": 78901,
+        "part_id": 32109,
+        "name": "Smart LED Headlight",
+        "price": 39.99,
+        "in_stock": 10,
+        "min": 4,
+        "max": 15
+    },
+    {
+        "machine_id": 89012,
+        "part_id": 43210,
+        "name": "Ergonomic Grips",
+        "price": 18.75,
+        "in_stock": 20,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "machine_id": 90123,
+        "part_id": 54321,
+        "name": "Precision Bearings",
+        "price": 30.50,
+        "in_stock": 12,
+        "min": 6,
+        "max": 18
+    },
+    {
+        "machine_id": 91234,
+        "part_id": 65432,
+        "name": "Kevlar Puncture-Proof Tires",
+        "price": 49.99,
+        "in_stock": 8,
+        "min": 3,
+        "max": 10
+    },
+    {
+        "machine_id": 92345,
+        "part_id": 76543,
+        "name": "Adjustable Seat Post",
+        "price": 55.75,
+        "in_stock": 7,
+        "min": 2,
+        "max": 10
+    },
+    {
+        "machine_id": 93456,
+        "part_id": 87654,
+        "name": "Ultra-Durable Kickstand",
+        "price": 25.50,
+        "in_stock": 15,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "machine_id": 94567,
+        "part_id": 98765,
+        "name": "All-Weather Mudguards",
+        "price": 29.99,
+        "in_stock": 14,
+        "min": 5,
+        "max": 18
+    },
+    {
+        "machine_id": 95678,
+        "part_id": 29876,
+        "name": "High-Speed Cassette",
+        "price": 74.99,
+        "in_stock": 6,
+        "min": 2,
+        "max": 8
+    },
+    {
+        "machine_id": 96789,
+        "part_id": 10987,
+        "name": "Tubeless Tire Kit",
+        "price": 89.99,
+        "in_stock": 5,
+        "min": 2,
+        "max": 8
+    },
+    {
+        "machine_id": 97890,
+        "part_id": 21098,
+        "name": "Lightweight Alloy Rims",
+        "price": 159.99,
+        "in_stock": 3,
+        "min": 1,
+        "max": 5
+    },
+    {
+        "machine_id": 98901,
+        "part_id": 32109,
+        "name": "Magnetic Bottle Holder",
+        "price": 22.50,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "machine_id": 99912,
+        "part_id": 43210,
+        "name": "Carbon Fiber Seat",
+        "price": 199.99,
+        "in_stock": 4,
+        "min": 1,
+        "max": 6
+    },
+    {
+        "machine_id": 11122,
+        "part_id": 54321,
+        "name": "Performance Chain Lube",
+        "price": 9.99,
+        "in_stock": 25,
+        "min": 10,
+        "max": 30
+    },
+    {
+        "machine_id": 22233,
+        "part_id": 65432,
+        "name": "Wireless Speedometer",
+        "price": 59.99,
+        "in_stock": 8,
+        "min": 3,
+        "max": 12
+    },
+    {
+        "machine_id": 33344,
+        "part_id": 76543,
+        "name": "Shockproof Bike Computer",
+        "price": 129.99,
+        "in_stock": 4,
+        "min": 1,
+        "max": 5
+    },
+    {
+        "machine_id": 44455,
+        "part_id": 87654,
+        "name": "Quick Release Skewers",
+        "price": 24.99,
+        "in_stock": 14,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "machine_id": 55566,
+        "part_id": 98765,
+        "name": "Durable Bike Stand",
+        "price": 35.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 18
+    },
+    {
+        "machine_id": 66677,
+        "part_id": 29876,
+        "name": "Solar Powered Tail Light",
+        "price": 19.99,
+        "in_stock": 20,
+        "min": 6,
+        "max": 25
+    },
+    {
+        "machine_id": 77788,
+        "part_id": 10987,
+        "name": "Heavy Duty Bike Lock",
+        "price": 45.00,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "machine_id": 88899,
+        "part_id": 21098,
+        "name": "Premium Bar Ends",
+        "price": 20.00,
+        "in_stock": 8,
+        "min": 3,
+        "max": 10
+    },
+    {
+        "machine_id": 99900,
+        "part_id": 32109,
+        "name": "Ergonomic Saddle",
+        "price": 54.50,
+        "in_stock": 7,
+        "min": 3,
+        "max": 10
+    },
+    {
+        "machine_id": 10001,
+        "part_id": 43210,
+        "name": "Compact Mini Pump",
+        "price": 16.99,
+        "in_stock": 18,
+        "min": 5,
+        "max": 25
+    },
+    {
+        "machine_id": 11002,
+        "part_id": 54321,
+        "name": "Smartphone Mount",
+        "price": 29.50,
+        "in_stock": 10,
+        "min": 5,
+        "max": 15
+    },
+    {
+        "machine_id": 12003,
+        "part_id": 65432,
+        "name": "Titanium Spokes",
+        "price": 89.99,
+        "in_stock": 6,
+        "min": 2,
+        "max": 8
+    },
+    {
+        "machine_id": 13004,
+        "part_id": 76543,
+        "name": "LED Safety Vest",
+        "price": 32.99,
+        "in_stock": 12,
+        "min": 5,
+        "max": 18
+    },
+    {
+        "machine_id": 14005,
+        "part_id": 87654,
+        "name": "Rechargeable Horn",
+        "price": 27.75,
+        "in_stock": 14,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "machine_id": 15006,
+        "part_id": 98765,
+        "name": "High Visibility Reflectors",
+        "price": 12.99,
+        "in_stock": 22,
+        "min": 5,
+        "max": 30
+    },
+    {
+        "machine_id": 16007,
+        "part_id": 29876,
+        "name": "Padded Cycling Gloves",
+        "price": 17.50,
+        "in_stock": 15,
+        "min": 5,
+        "max": 20
+    },
+    {
+        "machine_id": 17008,
+        "part_id": 10987,
+        "name": "Performance Road Tires",
+        "price": 89.99,
+        "in_stock": 5,
+        "min": 2,
+        "max": 8
+    },
+    {
+        "machine_id": 18009,
+        "part_id": 21098,
+        "name": "Pro Gear Shift Cables",
+        "price": 24.99,
+        "in_stock": 9,
+        "min": 3,
+        "max": 12
+    },
+    {
+        "machine_id": 19010,
+        "part_id": 32109,
+        "name": "Ultra-Light Bike Bell",
+        "price": 11.99,
+        "in_stock": 16,
+        "min": 5,
+        "max": 25
+    }
+]
