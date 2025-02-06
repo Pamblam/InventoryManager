@@ -80,6 +80,7 @@
             partsSearchInput.Name = "partsSearchInput";
             partsSearchInput.Size = new Size(282, 23);
             partsSearchInput.TabIndex = 3;
+            partsSearchInput.KeyUp += partsSearchInput_KeyUp;
             // 
             // productSearchInput
             // 
@@ -87,6 +88,7 @@
             productSearchInput.Name = "productSearchInput";
             productSearchInput.Size = new Size(282, 23);
             productSearchInput.TabIndex = 4;
+            productSearchInput.KeyUp += productSearchInput_KeyUp;
             // 
             // partsSearchBtn
             // 
@@ -96,6 +98,7 @@
             partsSearchBtn.TabIndex = 5;
             partsSearchBtn.Text = "Search";
             partsSearchBtn.UseVisualStyleBackColor = true;
+            partsSearchBtn.Click += partsSearchBtn_Click;
             // 
             // productsSearchBtn
             // 
@@ -105,6 +108,7 @@
             productsSearchBtn.TabIndex = 6;
             productsSearchBtn.Text = "Search";
             productsSearchBtn.UseVisualStyleBackColor = true;
+            productsSearchBtn.Click += productsSearchBtn_Click;
             // 
             // partsLabel
             // 
@@ -134,6 +138,7 @@
             partsDeleteBtn.TabIndex = 9;
             partsDeleteBtn.Text = "Delete";
             partsDeleteBtn.UseVisualStyleBackColor = true;
+            partsDeleteBtn.Click += partsDeleteBtn_Click;
             // 
             // partsModifyBtn
             // 
@@ -161,6 +166,7 @@
             productsDeleteBtn.TabIndex = 12;
             productsDeleteBtn.Text = "Delete";
             productsDeleteBtn.UseVisualStyleBackColor = true;
+            productsDeleteBtn.Click += productsDeleteBtn_Click;
             // 
             // productModifyBtn
             // 
@@ -188,6 +194,7 @@
             exitBtn.TabIndex = 15;
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = true;
+            exitBtn.Click += exitBtn_Click;
             // 
             // MainScreen
             // 
@@ -238,4 +245,4 @@
         private Button productsAddBtn;
         private Button exitBtn;
     }
-} // 11 - cpt test ( 12/20 -  )
+}
