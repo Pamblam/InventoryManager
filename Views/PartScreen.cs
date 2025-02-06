@@ -18,7 +18,11 @@ namespace InventoryManager_C968.Views {
         public PartScreen(Part? part = null) {
             InitializeComponent();
             this.part = part;
-            productLabel.Text = part == null ? "Add Part" : "Modify Part";
+            partLabel.Text = part == null ? "Add Part" : "Modify Part";
+        }
+
+        private void PartScreen_Load(object sender, EventArgs e) {
+
         }
     }
 }
