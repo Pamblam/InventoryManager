@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventoryManager-C968")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70de019eed1b237bc23c80ff43fa0fc82a2c1e05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4579ac1c718a142a0a8067e3d8d9d6d1c3b69d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventoryManager-C968")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventoryManager-C968")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

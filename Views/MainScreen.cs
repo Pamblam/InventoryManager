@@ -187,16 +187,22 @@ namespace InventoryManager_C968 {
         private void partsDeleteBtn_Click(object sender, EventArgs e) {
             Part part = getSelectedPart();
             if (part != null) {
-                this.inventory.deletePart(part);
-                searchPartsTable();
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this part?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes) {
+                    this.inventory.deletePart(part);
+                    searchPartsTable();
+                }
             }
         }
 
         private void productsDeleteBtn_Click(object sender, EventArgs e) {
             Product? product = getSelectedProduct();
             if (product != null) {
-                this.inventory.removeProduct(product);
-                searchProductsTable();
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this product?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes) {
+                    this.inventory.removeProduct(product);
+                    searchProductsTable();
+                }
             }
         }
 
@@ -211,7 +217,7 @@ namespace InventoryManager_C968 {
         }
 
         private void productsAddBtn_Click(object sender, EventArgs e) {
-            ProductScreen screen = new ProductScreen();
+            ProductScreen screen = new ProductScreen(this.inventory);
             screen.FormClosed += ProductScreen_FormClosed;
             screen.ShowDialog();
         }
@@ -242,7 +248,7 @@ namespace InventoryManager_C968 {
         private Product? getSelectedProduct() {
             if (productsTable.SelectedRows.Count > 0) {
                 DataGridViewRow selectedRow = productsTable.SelectedRows[0];
-                var productId = Convert.ToInt16(selectedRow.Cells["ProductID"].Value);
+                var productId = Convert.ToInt32(selectedRow.Cells["ProductID"].Value);
                 foreach (Product product in this.inventory.Products) {
                     if (productId == product.ProductId) {
                         return product;
@@ -256,7 +262,7 @@ namespace InventoryManager_C968 {
         private void productModifyBtn_Click(object sender, EventArgs e) {
             Product? product = getSelectedProduct();
             if (product != null) {
-                ProductScreen screen = new ProductScreen(product);
+                ProductScreen screen = new ProductScreen(this.inventory, product);
                 screen.FormClosed += ProductScreen_FormClosed;
                 screen.ShowDialog();
             }
