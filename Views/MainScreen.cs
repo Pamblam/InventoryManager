@@ -149,6 +149,14 @@ namespace InventoryManager_C968 {
             }
         }
 
+        private void ProductScreen_FormClosed(object sender, EventArgs e) {
+            searchProductsTable();
+        }
+
+        private void PartScreen_FormClosed(object sender, EventArgs e) {
+            searchPartsTable();
+        }
+
         private void searchProductsTable() {
             var searchTerm = productSearchInput.Text;
             var filteredRows = new BindingList<Product>();
@@ -180,6 +188,7 @@ namespace InventoryManager_C968 {
             Part part = getSelectedPart();
             if (part != null) {
                 this.inventory.deletePart(part);
+                searchPartsTable();
             }
         }
 
@@ -187,6 +196,7 @@ namespace InventoryManager_C968 {
             Product? product = getSelectedProduct();
             if (product != null) {
                 this.inventory.removeProduct(product);
+                searchProductsTable();
             }
         }
 
@@ -195,21 +205,22 @@ namespace InventoryManager_C968 {
         }
 
         private void partsAddBtn_Click(object sender, EventArgs e) {
-            PartScreen screen = new PartScreen();
+            PartScreen screen = new PartScreen(this.inventory);
+            screen.FormClosed += PartScreen_FormClosed;
             screen.ShowDialog();
         }
 
         private void productsAddBtn_Click(object sender, EventArgs e) {
             ProductScreen screen = new ProductScreen();
+            screen.FormClosed += ProductScreen_FormClosed;
             screen.ShowDialog();
-
-
         }
 
         private void partsModifyBtn_Click(object sender, EventArgs e) {
             Part? part = getSelectedPart();
             if (part != null) {
-                PartScreen screen = new PartScreen(part);
+                PartScreen screen = new PartScreen(this.inventory, part);
+                screen.FormClosed += PartScreen_FormClosed; 
                 screen.ShowDialog();
             }
         }
@@ -217,14 +228,14 @@ namespace InventoryManager_C968 {
         private Part? getSelectedPart() {
             if (partsTable.SelectedRows.Count > 0) {
                 DataGridViewRow selectedRow = partsTable.SelectedRows[0];
-                var partId = Convert.ToInt16(selectedRow.Cells["PartID"].Value);
+                var partId = Convert.ToInt32(selectedRow.Cells["PartID"].Value);
                 foreach (Part part in this.inventory.AllParts) {
                     if (partId == part.PartID) {
                         return part;
                     }
                 }
             }
-            MessageBox.Show("No part selected.", "Alert", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            MessageBox.Show("No part selected.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return null;
         }
 
@@ -238,7 +249,7 @@ namespace InventoryManager_C968 {
                     }
                 }
             }
-            MessageBox.Show("No product selected.", "Alert", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            MessageBox.Show("No product selected.", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return null;
         }
 
@@ -246,6 +257,7 @@ namespace InventoryManager_C968 {
             Product? product = getSelectedProduct();
             if (product != null) {
                 ProductScreen screen = new ProductScreen(product);
+                screen.FormClosed += ProductScreen_FormClosed;
                 screen.ShowDialog();
             }
         }

@@ -23,11 +23,9 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            components = new System.ComponentModel.Container();
             partLabel = new Label();
             radioInhouse = new RadioButton();
-            timer1 = new System.Windows.Forms.Timer(components);
-            radioOutoourced = new RadioButton();
+            radioOutsourced = new RadioButton();
             groupBoxPartType = new GroupBox();
             textBoxID = new TextBox();
             labelID = new Label();
@@ -70,22 +68,24 @@
             radioInhouse.TabStop = true;
             radioInhouse.Text = "In-House";
             radioInhouse.UseVisualStyleBackColor = true;
+            radioInhouse.CheckedChanged += partType_CheckedChanged;
             // 
-            // radioOutoourced
+            // radioOutsourced
             // 
-            radioOutoourced.AutoSize = true;
-            radioOutoourced.Location = new Point(168, 22);
-            radioOutoourced.Name = "radioOutoourced";
-            radioOutoourced.Size = new Size(91, 19);
-            radioOutoourced.TabIndex = 2;
-            radioOutoourced.TabStop = true;
-            radioOutoourced.Text = "Out Sourced";
-            radioOutoourced.UseVisualStyleBackColor = true;
+            radioOutsourced.AutoSize = true;
+            radioOutsourced.Location = new Point(168, 22);
+            radioOutsourced.Name = "radioOutsourced";
+            radioOutsourced.Size = new Size(91, 19);
+            radioOutsourced.TabIndex = 2;
+            radioOutsourced.TabStop = true;
+            radioOutsourced.Text = "Out Sourced";
+            radioOutsourced.UseVisualStyleBackColor = true;
+            radioOutsourced.CheckedChanged += partType_CheckedChanged;
             // 
             // groupBoxPartType
             // 
             groupBoxPartType.Controls.Add(radioInhouse);
-            groupBoxPartType.Controls.Add(radioOutoourced);
+            groupBoxPartType.Controls.Add(radioOutsourced);
             groupBoxPartType.Location = new Point(12, 33);
             groupBoxPartType.Name = "groupBoxPartType";
             groupBoxPartType.Size = new Size(298, 51);
@@ -226,6 +226,7 @@
             buttonCancel.TabIndex = 18;
             buttonCancel.Text = "Cancel";
             buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.Click += buttonCancel_Click;
             // 
             // buttonSave
             // 
@@ -235,6 +236,7 @@
             buttonSave.TabIndex = 19;
             buttonSave.Text = "Save";
             buttonSave.UseVisualStyleBackColor = true;
+            buttonSave.Click += buttonSave_Click;
             // 
             // PartScreen
             // 
@@ -270,8 +272,7 @@
 
         private Label partLabel;
         private RadioButton radioInhouse;
-        private System.Windows.Forms.Timer timer1;
-        private RadioButton radioOutoourced;
+        private RadioButton radioOutsourced;
         private GroupBox groupBoxPartType;
         private TextBox textBoxID;
         private Label labelID;
