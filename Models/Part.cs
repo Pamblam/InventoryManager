@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace InventoryManager_C968 {
     public abstract class Part {
+        public List<int> AssociatedProductIds = new List<int>();
+
         public int PartID { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }

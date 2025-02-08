@@ -110,6 +110,9 @@ namespace InventoryManager_C968.Views {
                 errors.Add("Maximum must be greater than minimum quantity.");
                 textBoxMax.BackColor = Color.Red;
                 textBoxMin.BackColor = Color.Red;
+            } else if (min > inventory || max < inventory) {
+                errors.Add("Inventory must be between within acceptable range.");
+                textBoxInentory.BackColor = Color.Red;
             } else {
                 textBoxMax.BackColor = SystemColors.Window;
             }

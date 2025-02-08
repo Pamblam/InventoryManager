@@ -17,6 +17,7 @@ namespace InventoryManager_C968.Views {
         Product? product;
         Inventory inventory;
         BindingList<Part> associatedParts = new BindingList<Part>();
+        List<Part> removedParts = new List<Part>();
 
         public ProductScreen(Inventory inventory, Product? product = null) {
             InitializeComponent();
@@ -190,6 +191,9 @@ namespace InventoryManager_C968.Views {
         private void buttonAdd_Click(object sender, EventArgs e) {
             Part? part = getSelectedCandidatePart();
             if (part != null) {
+                if (removedParts.Contains(part)) {
+                    removedParts.Remove(part);
+                }
                 associatedParts.Add(part);
                 loadCandidatePartsTable();
                 loadAssociatedPartsTable();
@@ -232,6 +236,9 @@ namespace InventoryManager_C968.Views {
                     if (p != part) {
                         parts.Add(p);
                     }
+                }
+                if (!removedParts.Contains(part)) {
+                    removedParts.Add(part);
                 }
                 this.associatedParts = parts;
                 loadCandidatePartsTable();
@@ -285,6 +292,9 @@ namespace InventoryManager_C968.Views {
                 errors.Add("Maximum must be greater than minimum quantity.");
                 textBoxMax.BackColor = Color.Red;
                 textBoxMin.BackColor = Color.Red;
+            } else if (min > inventory || max < inventory) {
+                errors.Add("Inventory must be between within acceptable range.");
+                textBoxInentory.BackColor = Color.Red;
             } else {
                 textBoxMax.BackColor = SystemColors.Window;
             }
@@ -304,23 +314,37 @@ namespace InventoryManager_C968.Views {
                 MessageBox.Show(string.Join("\n", errors), "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+            Product p;
             if (this.product != null) {
 
-                this.product.ProductId = id;
-                this.product.Name = name;
-                this.product.Price = price;
-                this.product.InStock = inventory;
-                this.product.Min = min;
-                this.product.Max = max;
-                this.product.AssociatedParts = this.associatedParts;
+                p = this.product;
+                p.ProductId = id;
+                p.Name = name;
+                p.Price = price;
+                p.InStock = inventory;
+                p.Min = min;
+                p.Max = max;
+                p.AssociatedParts = this.associatedParts;
 
             } else {
 
-                var newProduct = new Product(id, name, price, inventory, min, max);
-                newProduct.AssociatedParts = this.associatedParts;
-                this.inventory.addProduct(newProduct);
+                p = new Product(id, name, price, inventory, min, max);
+                p.AssociatedParts = this.associatedParts;
+                this.inventory.addProduct(p);
 
             }
+
+            foreach (Part pt in removedParts) { 
+                pt.AssociatedProductIds.Remove(p.ProductId);
+            }
+
+            foreach (Part pt in p.AssociatedParts) {
+                if (!pt.AssociatedProductIds.Contains(p.ProductId)) {
+                    pt.AssociatedProductIds.Add(p.ProductId);
+                }
+            }
+
 
             this.Close();
         }

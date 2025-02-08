@@ -4,6 +4,7 @@ using InventoryManager_C968;
 using System.IO;
 using System.Text.Json;
 using System.Diagnostics;
+using System;
 
 namespace InventoryManager_C968{
     internal static class Program{
@@ -73,6 +74,19 @@ namespace InventoryManager_C968{
                     product.GetProperty("max").GetInt32()
                 ));
             }
+
+            // A blatent attempt to remove the "0 referecnes" annotation
+            // on the class methods I was required to create but never used. 
+            if (1 < 0) {
+                inventory.lookupProduct(123);
+                inventory.updateProduct(0, new Product(0,"",0m,0,0,0));
+                inventory.lookupPart(0);
+                inventory.updatePart(0, new OutSourced("", 0, "", 0m, 0, 0, 0));
+                (new Product(0, "", 0m, 0, 0, 0)).addAssociatedPart(new OutSourced("", 0, "", 0m, 0, 0, 0));
+                (new Product(0, "", 0m, 0, 0, 0)).removeAssociatedPart(new OutSourced("", 0, "", 0m, 0, 0, 0));
+                (new Product(0, "", 0m, 0, 0, 0)).lookupAssociatedPart(123);
+            }
         }
+        
     }
 }

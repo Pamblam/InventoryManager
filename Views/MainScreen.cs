@@ -187,10 +187,14 @@ namespace InventoryManager_C968 {
         private void partsDeleteBtn_Click(object sender, EventArgs e) {
             Part part = getSelectedPart();
             if (part != null) {
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this part?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes) {
-                    this.inventory.deletePart(part);
-                    searchPartsTable();
+                if (part.AssociatedProductIds.Count > 0) {
+                    MessageBox.Show($"Product cannot be deleted. It is associated with {part.AssociatedProductIds.Count} product(s).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } else {
+                    DialogResult result = MessageBox.Show("Are you sure you want to delete this part?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes) {
+                        this.inventory.deletePart(part);
+                        searchPartsTable();
+                    }
                 }
             }
         }

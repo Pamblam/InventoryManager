@@ -44,7 +44,7 @@ namespace InventoryManager_C968 {
             return AllParts.FirstOrDefault(p => p.PartID == partId);
         }
 
-        void updatePart(int index, Part part) {
+        public void updatePart(int index, Part part) {
             AllParts[index] = part;
         }
 
